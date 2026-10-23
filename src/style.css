@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: green;
+    color: white;
+}
+
+button{
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contenedor{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card{
+    width: 250px;
+    padding: 20px;
+    border: 1px solid rgb(58, 0, 0);
+    border-radius: 10px ;
+    transition: 0.3s;
+}
+
+img{
+    width: 600px;
+    max-width: 100%;
+}
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#formularioContacto {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formularioContacto button {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#formularioContacto button:hover {
+    background-color: darkgreen;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.exito {
+    color: green;
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}

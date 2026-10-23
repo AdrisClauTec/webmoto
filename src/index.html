@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Clubs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="contenido">
+            <h1>Motos para Cyber Redes</h1>
+            <p>
+                Motos que funcionan ingresando codigo binario
+            </p>
+            <button onclick="mostrarMensaje()">
+                Iniciar
+            </button>
+            <p id="mensaje"></p>
+        </div>
+    </section>
+    <h1>Nuestros Servicios</h1>
+    <div class="contenedor">
+
+        <div class="card" onmouseover="resaltar(this)" onmouseout="restaurar(this)">
+            <h3>Mantenimiento de Codigos de Motos</h3>
+            <p>Nuestro servicio de mantenimiento consiste en corregir codigos de motos a travez de nuestros scaners</p>
+        </div>
+
+        <div class="card" onmouseover="resaltar(this)" onmouseout="restaurar(this)">
+            <h3>Revision Electrica y Electronica</h3>
+            <p>Revision a detalle el cicuito de cableado de la moto</p>
+        </div>
+
+        <div class="card" onmouseover="resaltar(this)" onmouseout="restaurar(this)">
+            <h3>Importacion de Cyber repuestos</h3>
+            <p>Importamos repuestos de la mejor calidad del mercado (Chino)</p>
+        </div>
+
+    </div>
+    <h1>Galeria</h1>
+    <div class="slider">
+        <img id="imagen">
+    </div>
+    <div class = "botones">
+        <button onclick="anterior()">
+            Anterior
+        </button>
+        <button onclick="siguiente()">
+            Siguiente
+        </button>
+
+    <h1>Contacto</h1>
+    <div class="contenedor-contacto">
+        <form id="formularioContacto" onsubmit="validarFormulario(event)">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+                <br><br>
+            </div> 
+
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com">
+
+                <br><br>
+            </div>
+
+            <div class="campo">
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje">
+
+                <br><br>
+            </div>
+
+            <button type="submit">Enviar</button>
+            
+            <p id="errorMensaje" class="error"></p>
+            <p id="exitoMensaje" class="exito"></p>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
